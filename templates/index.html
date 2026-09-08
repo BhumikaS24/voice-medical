@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoiceMed</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef6fb;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 70px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        h1 {
+            color: #1261a0;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 80%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 13px 22px;
+            margin: 12px 5px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .send-btn {
+            background: #1261a0;
+            color: white;
+        }
+
+        .mic-btn {
+            background: #2e8b57;
+            color: white;
+        }
+
+        #response {
+            margin-top: 25px;
+            padding: 18px;
+            background: #f3f8fc;
+            border-radius: 10px;
+            min-height: 25px;
+            color: #333;
+        }
+
+        .status {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🩺 VoiceMed</h1>
+
+        <p class="subtitle">
+            Voice-first medical information assistant
+        </p>
+
+        <input
+            type="text"
+            id="textInput"
+            placeholder="Enter patient information"
+        >
+
+        <br>
+
+        <button class="send-btn" onclick="sendText()">
+            Send
+        </button>
+
+        <button class="mic-btn" onclick="startListening()">
+            🎤 Speak
+        </button>
+
+        <div id="response">
+            Your response will appear here.
+        </div>
+
+        <div class="status">
+            Rime-powered voice response
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
