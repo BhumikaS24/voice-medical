@@ -1,4 +1,7 @@
 # VoiceMed
+## Demo
+
+Demo video: https://drive.google.com/file/d/1ynQrx45MZNkRCnLfSIvtZH4IfS8kRh0z/view?usp=sharing
 
 VoiceMed is a voice-first medical information assistant designed for hands-free interaction with basic patient information.
 
