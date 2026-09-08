@@ -31,6 +31,15 @@ def process():
     lower_text = text.lower()
 
     # --------------------------------
+    # FIX COMMON SPEECH RECOGNITION ERRORS
+    # --------------------------------
+    if "patient is" in lower_text:
+        lower_text = lower_text.replace("patient is", "patient a")
+
+    if "patient ay" in lower_text:
+        lower_text = lower_text.replace("patient ay", "patient a")
+
+    # --------------------------------
     # 1. HANDLE SPOKEN CORRECTIONS
     # --------------------------------
     if "correction" in lower_text:
